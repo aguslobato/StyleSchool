@@ -1,0 +1,25 @@
+const ListProducts = [
+     { id: 1, category:"Frontend", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Chubut",  title: "Libro de Bootstrap", price: 350, image: "https://http2.mlstatic.com/D_NQ_NP_978103-MLA46935478425_072021-O.jpg", stock: 10, autor: "USERS"},
+     { id: 2, category:"Frontend", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Usado", ubicacion:"Cordoba", title: "Libro de HTML & CSS", price: 580, image: "https://http2.mlstatic.com/D_NQ_NP_968397-MLA46935383833_072021-O.jpg", stock: 16, autor: "USERS"},
+     { id: 3, category:"Frontend", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"SantaFe", title: "Libro de Javascript", price: 650, image: "https://http2.mlstatic.com/D_NQ_NP_618042-MLA46935449548_072021-O.jpg", stock: 14, autor: "USERS"},
+     { id: 4, category:"Frontend", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Usado", ubicacion:"BuenosAires", title: "Libro de PHP", price: 999, image: "https://http2.mlstatic.com/D_NQ_NP_981347-MLA46966872532_082021-O.jpg", stock: 7, autor: "USERS"},
+     { id: 5, category:"Backend", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Chubut", title: "Libro de Programacion para Niños", price: 370, image: "https://autoaprendizaje.info/wp-content/uploads/2019/01/423424234242.jpg", stock: 13, autor: "AUTOAPRENDIZAJE.INFO"},
+     { id: 6, category:"Backend", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Usado", ubicacion:"SantaFe", title: "Libro de Testing PHP",price: 620, image: "https://images-platform.99static.com/B0WlXBzFQlcERN5nYhoMMkZFMaY=/82x232:1953x2103/500x500/top/smart/99designs-contests-attachments/74/74156/attachment_74156234", stock: 10, autor: "JEFFREY WAY"},
+     { id: 7, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Cordoba", title: "Oferta de Libros", price: 1230, image: "https://image.cdn1.buscalibre.com/5f81a36547f0b56c448b4567.RS500x500.jpg", stock: 19, autor: "USERS"},
+     { id: 8, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Usado", ubicacion:"BuenosAires", title: "Oferta de Libros", price: 1550, image: "https://m.media-amazon.com/images/I/51nr6zNIWAS._SL500_.jpg", stock: 13, autor: "JJ TAM"},
+     { id: 9, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Chubut", title: "Oferta de Libros", price: 999, image: "https://img.directindustry.es/images_di/photo-mg/101213-15900850.jpg", stock: 17, autor: "PARKER"},
+     {id: 10, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Cordoba", title:"Oferta de Libro", price: 600, image:"https://autodidacta.info/wp-content/uploads/2018/09/53534534.jpg", stock: 5, autor:"USERS"},
+     {id: 11, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Cordoba", title:"Oferta de Libro", price: 540, image:"https://m.media-amazon.com/images/I/41jH8wN-eNL.jpg", stock: 12, autor:"USERS"},
+     {id: 12, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Chubut", title:"Oferta de Libro", price: 625, image:"https://i1.wp.com/librospdfgratis.org/wp-content/uploads/2020/05/d2487d96a5173b442522cc8f47dee375.jpg", stock: 16, autor:"USERS"},
+     {id: 13, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"BuenosAires", title:"Oferta de Libro", price: 780, image:"https://usershop.redusers.com/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/t/a/tapa3d_20_6.jpg", stock: 10, autor:"USERS"},
+     {id: 14, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"SantaFe", title:"Oferta de Libro", price: 900, image:"https://autoaprendizaje.info/wp-content/uploads/2019/07/234234324234234.jpg", stock: 18, autor:"USERS"},
+     {id: 15, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Full", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Cordoba", title:"Oferta de Libro", price: 500, image:"https://www.librosyeditores.com/13508/logica-de-programacion.jpg", stock: 20, autor:"USERS"},
+     {id: 16, category:"Ofertas", costoEnvio:"Gratis", tipoEntrega:"Envio", Pago:"sinInteres", condicion:"Nuevo", ubicacion:"Chubut", title:"Oferta de Libro", price: 750, image:"https://autodidacta.info/wp-content/uploads/2019/10/2345345564567567.jpg", stock: 19, autor:"USERS"}
+]
+ 
+  const GetFetchList = new Promise((resolve, reject) => {
+     setTimeout(() => {
+         resolve(ListProducts);
+     }, 0);
+ });/*  */
+ export default GetFetchList

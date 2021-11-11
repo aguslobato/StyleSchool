@@ -1,0 +1,44 @@
+ .ContainerLibros{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     padding: 2em;
+ }
+ .ContainerLibrosContenedor{
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     padding: 1em;
+     margin-top: 4em;
+     background-color: white;
+ }
+
+
+ .PresentacionProductos{
+     display: flex;
+     justify-content: center;
+     padding: 4em;
+ }
+
+
+
+
+
+
+ @media (min-width: 2500px){}
+
+ @media (max-width: 500px){
+    .ContainerLibros{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2em 0;
+    }
+    .ContainerLibrosContenedor{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 1em;
+    }
+ }

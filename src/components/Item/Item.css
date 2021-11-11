@@ -1,0 +1,127 @@
+body{
+  background-color: rgb(221, 221, 221);
+}
+/* SHOP */
+  .LibroItem{
+    display: flex;
+    height: 250px;
+    width: 1200px;
+    border-bottom: 2px solid #b1b1b1;
+    padding: 1em;
+  }
+  .LibroHeadItem{
+    width: 250px;
+    height: 250px;
+    margin-right: 3em;
+  }
+  .LibroHeadItem img{
+    width: 150px;
+    height: 200px;
+    transition: .7s;
+  }
+  .LibroHeadItem img:hover{
+    transition: .7s;
+    transform: scale(1.1, 1.1);
+  }
+  .LibroBodyItem{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    padding: 1em;
+    width: 900px;
+    height: 250px;
+  }
+  .LibroBodyItem h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', serif;
+  }
+  .LibroBodyItem span{
+    padding: 5px;
+    font-family: 'Zen Antique', serif;
+  }
+  .LibroBodyItem a{
+    width: max-content;
+    padding: 10px;
+    margin: 5px;
+    background-color: #003b5a;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    color:#ffffff;
+    text-decoration: none;
+    transition: .8s;
+  }
+  .LibroBodyItem a:hover{
+    background-color: #05283a;
+    color: #fff;
+    transition: .8s;
+  }
+  .LibroFooterItem{
+    display: flex;
+    flex-direction: column;
+  }
+  .LibroFooterItem span{
+    padding: 5px;
+    font-family: 'Zen Antique', serif;
+  }
+  .precio{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+  }
+
+
+
+
+
+  
+ @media (min-width: 2500px){}
+
+ @media (max-width: 500px){
+   .LibroItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 350px;
+    padding: 0em;
+   }
+   .LibroHeadItem{
+     margin: 0;
+     width: 100%;
+     height: auto;
+     display: flex;
+     align-content: center;
+     justify-content: center;
+   }
+   .LibroBodyItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em 0;
+    margin: 0 10%;
+    width: 100%;
+    height: auto;
+  }
+  .precio{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #005a17;
+  }
+  .LibroBodyItem a{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000000;
+    text-decoration: none;
+    transition: .8s;
+  }
+  .LibroBodyItem a:hover{
+    background-color: #000000;
+    color: #fff;
+    transition: .8s;
+  }
+ }

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+  background-color: rgb(224, 223, 223);
+}
+.LibroDetail{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+  .LibroDetailContenedor{
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .LibroDetailContenedor .LibroHeadDetail{
+    margin-right: 2em;
+  }
+  .LibroDetailContenedor .LibroHeadDetail img{
+    width: 450px;
+    height: 450px;
+    border-radius: 20%;
+  }
+  .LibroDetailContenedor .LibroBodyDetail{
+    padding: 2em;
+    border-left: 2px solid #b1b1b1;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  .LibroDetailContenedor .LibroBodyDetail h2{
+    color: #003b5a;
+    font-family: 'Playfair Display', serif;
+  }
+  .LibroDetailContenedor .LibroBodyDetail h3, h4{
+    font-size: 17px;
+  }
+  .LibroDetailContenedor .LibroBodyDetail p{
+    padding: 1em;
+    color: rgb(72, 70, 70);
+  }
+  .LibroDetailContenedor .LibroBodyDetail button{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(224, 223, 223);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: .9s;
+  }
+  .LibroDetailContenedor .LibroBodyDetail button:hover{
+    background-color: rgb(46, 46, 46);
+    border: 2px solid rgb(255, 255, 255);
+    color: #fff;
+    transition: .9s;
+  }
+  .LibroDetailContenedor .LibroBodyDetail .precio{
+    border-bottom: 2px solid #b1b1b1;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+
+  /*DETALLES EXTRAS*/
+  .DetallesExtrasContenedor{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    height: 500px;
+    width: 60%;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasHead{
+    width: 50%;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasHead h2{
+    color: #003b5a;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasHead img{
+    width: 6em;
+    height: 6em;
+    transition: .9s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    box-shadow: 0px 7px 10px #063752;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasHead img:hover{
+    box-shadow: 0px 15px 14px #0d3e59;
+    transition: .9s;
+    transform: scale(1.1, 1.1);
+  }
+  .DetallesExtrasContenedor .DetallesExtrasHead span i{
+    font-size: 50px;
+    color: #003b5a;
+    margin: 20px;
+    transition: .9s;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasHead span i:hover{
+    color: #0c3144;
+    transition: .9s;
+    transform: scale(1.1, 1.1);
+  }
+  .DetallesExtrasContenedor .DetallesExtrasBody{
+    width: 50%;
+    border-left: 2px solid #b1b1b1;
+    padding-left: 1em;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasBody h4{
+    color: #003b5a;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    text-align: center;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasBody ul li{
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    margin: 20px;
+    border-bottom: 2px solid #b1b1b1;
+    transition: .9s;
+  }
+  .DetallesExtrasContenedor .DetallesExtrasBody ul li:hover{
+    color: #05283a;
+    transition: .9s;
+    cursor: default;
+  }
+
+
+
+  @media (max-width: 500px){
+    .LibroDetail{
+       flex-direction: row;
+       justify-content: space-around;
+        width: 100%;
+        height: auto
+    }
+  }

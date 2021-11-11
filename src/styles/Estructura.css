@@ -1,0 +1,585 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Philosopher&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
+ html{
+   scroll-behavior: smooth;
+ }
+ body{
+   background-color: #ffffff;
+   margin: 0;
+ }
+ code{
+  font-family: 'Raleway', sans-serif;
+  color: #8f073b;
+ }
+/*  background-color: rgb(13, 95, 95) */
+ /* NAVBAR */
+ .navbar{
+   display: flex;
+   position: absolute;
+   width: 100%;
+ }
+ .container-fluid{
+   background-color: rgba(255, 255, 255, 0) !important;
+ }
+ .navbar-text img{
+   width: 80px;
+   height: 80px;
+ }
+ .navbar-brand{
+   font: 200;
+   font-family: 'Nanum Myeongjo', serif;
+   font-size: 25px;
+}
+.nav-item .nav-link{
+  margin: 0 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+ /* FIN CODIGO NAVBAR */
+ 
+ /* HOME */
+ .FondoPrincipal{
+   width: 100%;
+   height: 600px;
+   background-image: url(../components/images/imagesHome/fondo-cursos-home.png);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ /* FIN CODIGO HOME */ 
+ 
+ /* BECAS */
+ .BecaEstudio{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   margin: 2em 0;
+   padding: 4em;
+ }
+ .BecaEstudioContenedor{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+ }
+ .BecaEstudioHead{
+   padding: 3em;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .BecaEstudioContenido{
+   width: 50%;
+   font-family: 'Playfair Display', serif;
+   color: rgb(0, 0, 0);
+   padding: 3em;
+ }
+ .BecaEstudioContenido a{
+   padding: 10px 20px;
+   margin: 10px;
+   color: rgb(0, 0, 0);
+   transition: .7s;
+   border: 1px solid rgb(0, 0, 0);
+   text-decoration: none;
+ }
+ .BecaEstudioContenido a:hover{
+   transition: .7s;
+   background-color: #8f073b;
+   color: #fff;
+ }
+ .BecaEstudioContenido p{
+   font-size: 18px;
+   font-family: 'Playfair Display', serif;
+   padding: 10px;
+ }
+ .BecaEstudioContenido .ParrafoDistinto{
+   color: #96053d;
+   font-size: 16px;
+ }
+ .BecaEstudioHead .BecaEstudioImagen{
+   width: 50%;
+ }
+ .BecaEstudioHead .BecaEstudioImagen img{
+   width: 90%;
+   height: 500px;
+   border-radius: 20px;
+   transition: .9s;
+ }
+ .BecaEstudioHead .BecaEstudioImagen img:hover{
+   transition: .9s;
+   /* transform: scale(1.1,1.1); */
+ }
+ .BecaEstudioBody{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   padding: 2em;
+   justify-content: center;
+   color:rgb(0, 0, 0);  
+   font-size: 20px;
+   transition: .9s;
+   border-radius: 20px;
+ }
+ .BecaEstudioRequisitos{
+   display: block;
+   width: 1200px;
+   padding: 2em;
+ }
+ .BecaEstudioRequisitos ul li{
+   list-style: circle;
+ }
+/* FIN CODIGO BECAS */
+
+/* PROPAGANDA */
+ .Propaganda{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin: 2em 0;
+   padding: 3em;
+ }
+ .PropagandaContenedor{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+ }
+ .PropagandaLibro{
+   width: 40%;
+   display: flex;
+ }
+ .PropagandaLibro a img{
+   width: 70%;
+   height: 100%;
+ }
+ .PropagandaCursos{
+   width: 60%;
+   height: 80%;
+   padding: 2em;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+ }
+ .PropagandaCursosContenedor{
+   padding: 3em;
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: center;
+   transition: .9s;
+ }
+ .CursoContenedor{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+ }
+ .PropagandaContenedor .PropagandaCursoHead{
+   display: flex;
+   justify-content: center;
+ }
+ .PropagandaContenedor .PropagandaCursoHead img{
+   width: 10em;
+   height: 10em;
+ }
+ .PropagandaContenedor .PropagandaCursoBody{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 1em;
+   font-family: 'Playfair Display', serif;
+   font-size: 18px;
+   color: rgb(0, 0, 0);
+   text-align: center;
+ }
+/* FIN CODIGO PROPAGANDA */
+ 
+ /* FOOTER */
+ footer{
+   padding: 1em;
+   bottom: 0px;
+   width: 100%;
+   background: #111;
+   color: #fff;
+   font-family: 'Playfair Display', serif;
+ }
+ footer input{
+   color: #fff;
+ }
+ footer textarea{
+   color: #fff;
+ }
+ .main-content{
+   display: flex;
+ }
+ .main-content .box{
+   flex-basis: 50%;
+   padding: 10px 20px;
+ }
+ .box h2{
+   font-size: 1.125rem;
+   font-weight: 400;
+   text-transform: uppercase;
+ }
+ .box .content{
+   margin: 20px 0 0 0;
+   position: relative;
+ }
+ .box .content:before{
+   position: absolute;
+   content: '';
+   top: -10px;
+   height: 2px;
+   width: 100%;
+   background: #424242;
+ }
+ .box .content:after{
+   position: absolute;
+   content: '';
+   height: 2px;
+   width: 15%;
+   background: #003b5a;
+   top: -10px;
+ }
+ .left .content p{
+   text-align: justify;
+ }
+ .left .content .social{
+   margin: 20px 0 0 0;
+ }
+ .left .content .social a{
+   padding: 0 2px;
+ }
+ .left .content .social a span{
+   height: 40px;
+   width: 40px;
+   background: #1a1a1a;
+   color: #fff;
+   line-height: 40px;
+   text-align: center;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: 0.3s;
+ }
+ .left .content .social a span:hover{
+   background: #003b5a;
+ }
+ .center .content .fas{
+   font-size: 18px;
+   background: #1a1a1a;
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50%;
+   transition: 0.3s;
+   cursor: pointer;
+ }
+ .center .content .fas:hover{
+   background: #003b5a;
+ }
+ .center .content .text{
+   font-size: 1.0625rem;
+   font-weight: 400;
+   padding-left: 10px;
+ }
+ .center .content .phone{
+   margin: 15px 0;
+ }
+ .right .content a{
+   color: #fff;
+   text-decoration: none;
+   margin: 7px;
+ }
+ .right .content a:hover{
+   border-bottom: 2px solid #003b5a;
+   transition: .1s;
+ }
+ .bottom center{
+   padding: 5px;
+   font-size: 0.9375rem;
+   background: #151515;
+ }
+ .bottom center span{
+   color: #ffffff;
+ }
+ .bottom center a{
+   color: #003b5a;
+   text-decoration: none;
+ }
+ .bottom center a:hover{
+   text-decoration: underline;
+ }
+ /* FIN CODIGO FOOTER */
+ 
+ /* COMUNIDAD */
+ .Comentarios{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+   padding: 4em 0;
+ }
+ .card {
+   width: 400px;
+   margin: 20px;
+   overflow: hidden;
+   position: relative;
+   background: white;
+   border-radius: 15px;
+   box-shadow: 7px 13px 37px rgba(0, 0, 0, .6);
+   transition: .9s;
+ }
+ .card:hover{
+   transition: .9s;
+   transform: scale(1.05,1.05);
+ }
+ .HeaderCard {
+   width: 100%;
+   height: 200px;
+   overflow: hidden;
+   position: relative;
+ }
+ .HeaderCard::before {
+   content: '';
+   position: absolute;
+   border-top: 30px solid transparent;
+   border-left: 400px solid white;
+   bottom: 0;
+ }
+ .HeaderCard img {
+   width: 100%;
+   height: 199px;
+ }
+ .BodyCard{
+   padding: 10px;
+   overflow: hidden;
+   text-align: center;
+ }
+ .BodyCard h2 {
+   margin: .5em 0;
+ }
+ .BodyCard p {
+   margin: 1em 0;
+ }
+ .BodyCard ul li {
+   list-style: none;
+   display: inline-block;
+   margin: .5em .2em;
+ }
+ .BodyCard ul li a {
+   text-decoration: none;
+   color: white;
+   background: #314652;
+   width: 30px;
+   height: 30px;
+   line-height: 30px !important;
+   border-radius: 50%;
+   transition: all .3s ease-in-out;
+ } 
+ .BodyCard ul li a:hover {
+   transform: scale(1.2);
+ }
+ .FooterCard {
+   width: 100%;
+   height: 80px;
+   background: #314652;
+   color: white;
+   position: relative;
+ }
+ .FooterCard::before {
+   content: '';
+   position: absolute;
+   border-bottom: 30px solid transparent;
+   border-right: 400px solid white; 
+   top: 0;
+ }
+ .FooterCard p {
+   padding: 30px;
+ }
+/* FIN CODIGO COMUNIDAD */
+
+ /* FORMULARIO */
+ .login-container {
+   background-color: #003b5a;
+   color: #fff;
+   height: 43.75em;
+   width: 100%;
+   padding: 2em;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   font-family: 'Playfair Display', serif;
+ } 
+ .login-info-container {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding-top: 0.5rem;
+ } 
+ .image-container {
+   padding: 2rem;
+   width: 50%;
+   box-sizing: border-box;
+ }
+ .title {
+   text-transform: capitalize;
+   font-size: 2.25rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+ }
+ .social-login {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   cursor: pointer;
+ }
+ .social-login-element {
+   width: 12.5rem;
+   height: 3.75rem;
+   font-size: 1.2rem;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .social-login-element a{
+   color: #ffffff;
+   text-decoration: none;
+ } 
+ .social-login-element img {
+   width: 1.875rem;
+   height: 1.875rem;
+   border-radius: 5px;
+   position: relative;
+   top: 0;
+   left: -0.625rem;
+ } 
+ .social-login-element:hover {
+   background-color:#003b5a;
+ }
+ .login-info-container > p {
+   font-size: 1.25em;
+   margin-top: 1.5em;
+ } 
+ .inputs-container {
+   height: 55%;
+   width: 85%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ } 
+ .input, .btn {
+   width: 90%;
+   height: 3.125rem;
+   font-size: 1em;
+ } 
+ .input {
+   padding-left: 20px;
+   border: none;
+   border-radius: 5px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   box-sizing: border-box;
+ }
+ .btn {
+   width: 80%;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #ffffff;
+   border-bottom: 3px solid #8f073b;
+ }
+ .btn:hover{
+   color: #8f073b;
+ }
+ .inputs-container p {
+   margin: 0;
+ }
+ .span {
+   font-weight: 600;
+   cursor: pointer;
+ }
+
+
+
+
+ @media (max-width: 500px){
+  .navbar{
+    display: flex;
+    position: absolute;
+    width: 100%;
+  }
+  .container-fluid{
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+  .navbar-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #fff;
+  }
+  .navbar-text img{
+    width: 50px;
+    height: 50px;
+  }
+  .navbar-brand{
+    font: 200;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+ }
+ .nav-item .nav-link{
+   text-align: center;
+   font-size: 18px;
+   margin: 10px 0;
+   color: rgb(0, 0, 0) !important;
+ }
+ .collapse{
+   background-color: rgba(146, 146, 146, 0.659);
+   border-radius: 20px;
+   transition: .9s;
+ }
+   footer{
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     padding: 0;
+   }
+   footer .main-content{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     width: 350px;
+     height: 100vh;
+   }
+   .main-content .box{
+    flex-basis: 100%;
+   }
+   .right .box{
+     width: 100%;
+   }
+   .left .content .social a span{
+     margin: 0 10px;
+   }
+ }
