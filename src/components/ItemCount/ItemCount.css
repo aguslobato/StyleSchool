@@ -1,15 +1,32 @@
-.finalizarCompra{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: black 2px solid;
-    background-color: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: gray;
-    transition: .7s;
+ .finalizarCompra{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: black 2px solid;
+     background-color: none;
+     padding: 10px 20px;
+     margin: 5px;
+     text-decoration: none;
+     color: gray;
+     transition: .7s;
 }
-.finalizarCompra:hover{
-    color: black;
-    transition: .7s;
+ .finalizarCompra:hover{
+     color: black;
+     transition: .7s;
+}
+ .seguirComprando{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: black 2px solid;
+     background-color: none;
+     padding: 10px 20px;
+     margin: 5px;
+     text-decoration: none;
+     color: gray;
+     transition: .7s;
+}
+ .seguirComprando:hover{
+     color: black;
+     transition: .7s;
 }

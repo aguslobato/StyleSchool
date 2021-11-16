@@ -1,8 +1,7 @@
-import './Sections.css'
-function Contact (){
-    return(
- 
-        <div className="Contact">
+ import './Sections.css'
+ function Contact (){
+     return(
+         <div className="Contact">
              <div className="FormularioContacto">
                  <div className="content-formulario">
                      <h1 className="logo">Contactate con <span>Nosotros</span></h1>
@@ -78,8 +77,7 @@ function Contact (){
                      </div>
                  </div>
              </div>
-        </div>
-
+         </div>
     );
 }
-export default Contact
+ export default Contact

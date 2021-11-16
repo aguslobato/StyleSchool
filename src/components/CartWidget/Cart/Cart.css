@@ -1,5 +1,112 @@
-.CartContenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+ .CartContenedor{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     width: 100%;
+     height: auto;
+     color: #fff;
+     min-height: 100vh;
+}
+ .CartContenedorContainer{
+     background-color: rgba(0, 0, 0, 0.575);
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     min-height: 100vh;
+}
+ .filled-cart{
+     display: flex;
+     padding: 2em;
+     width: 70%;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     align-items: center;
+}
+ .ImagenCard{
+     width: 5em;
+     height: 7em;
+     border-radius: 20%;
+}
+ .CardCarritoBody{
+     border-top: 1px solid #fff;
+}
+ .table>:not(caption)>*>*{
+     text-align: center;
+}
+ .TituloCard{
+     text-align: center;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 20px;
+}
+ .PrecioCard{
+     color: rgb(13, 151, 13);
+}
+ .RemoveItem{
+     font-size: 20px;
+     transition: .8s;
+     color: rgb(255, 255, 255);
+     background-color: rgba(255, 255, 255, 0);
+     border: none;
+}
+ .RemoveItem:hover{
+     transition: .8s;
+     color: rgb(165, 162, 162);
+}
+ .RemoveCart{
+     background-color: rgba(0, 0, 0, 0.391);
+     border: 1px solid white;
+     transition: .8s;
+     color: #fff;
+     padding: 10px 20px;
+     border-radius: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+ .RemoveCart:hover{
+     transition: .8s;
+     background-color: rgba(0, 0, 0, 0.672);
+     border-radius: 20px;
+}
+ .CarritoVacio{
+     color: #fff;
+     font-size: 30px;
+}
+ .TotalItemCarrito{
+     font-size: 25px;
+}
+ .VolverHome{
+     text-decoration: none;
+     font-size: 30px;
+     color: rgb(255, 255, 255);
+     text-align: center;
+     align-items: center;
+}
+ .VolverHome span {
+     color: red;
+}
+ .VolverHome:hover{
+     color: #fff;
+}
+ .ContenidoCarritoVacio{
+     margin: 1em;
+     padding: 2em;
+     align-items: center;
+     text-align: center;
+}
+ .TituloPrincipal{
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 40px;
+     text-align: center;
+}
+ .TituloPrincipal span{
+     color: rgb(121, 25, 25);
 }

@@ -20,10 +20,10 @@
                              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                          </li>
                          <li className="nav-item">
-                             <Link className="nav-link" to="/">Contact</Link>
+                             <Link className="nav-link" to="/contact">Contact</Link>
                          </li>
                          <li className="nav-item">
-                             <Link className="nav-link" to="/">About</Link>
+                             <Link className="nav-link" to="/about">About</Link>
                          </li>
                          <li className="nav-item">
                              <Link className="nav-link" to="/">Products</Link>

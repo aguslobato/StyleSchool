@@ -1,9 +1,9 @@
-import '../Item/Item.css'
-import { Link } from "react-router-dom";
+ import '../Item/Item.css'
+ import { Link } from "react-router-dom";
 
  const Item = ({ prod }) => {
-    return (
-         <div className="LibroItem">
+     return (
+          <div className="LibroItem">
              <div className="LibroHeadItem">
                  <Link to={`/producto/${prod.id}`}><img src={prod.image} alt={prod.title} /></Link>
              </div>
@@ -19,4 +19,4 @@ import { Link } from "react-router-dom";
          </div>
     );
 };
-export default Item
+ export default Item

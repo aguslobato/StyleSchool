@@ -1,39 +1,39 @@
-import ItemCount from '../ItemCount/ItemCount'
-import '../ItemDetail/ItemDetail.css'
-import logo from '../images/imagesHome/logo.jpg'
-import { Link } from 'react-router-dom';
-import { useState } from "react";
-import swal from "sweetalert";
-import { useCartContext } from '../Context/CartContext';
-import CartContextProvider from '../Context/CartContext';
+ import ItemCount from '../ItemCount/ItemCount'
+ import '../ItemDetail/ItemDetail.css'
+ import logo from '../images/imagesHome/logo.jpg'
+ import { Link } from 'react-router-dom';
+ import { useState } from "react";
+ import swal from "sweetalert";
+ import { useCartContext } from '../Context/CartContext';
 
-    const ItemDetail = ({product}) => {
-        const [count, setCount] = useState(1);
+     const ItemDetail = ({itemDetail}) => {
+         const [count] = useState(1);     
+         const [, setQuantity] = useState (1);
+         const {addToCartList} = useCartContext();
       
-        const {cartList, showCartList, addItem} = useCartContext();
-      
-        const onAdd = (qty) => {
-          setCount(qty);
-          addItem({...product, quantity: qty});
-          swal(`Añadido al carrito ${product.title} | Cantidad: ${qty}`,{ 
-            buttons: false,
-            timer: 2000,
-       });
+         const addToCart = (qty) => {
+             setQuantity(qty);
+             addToCartList({itemDetail, quantity: qty});
+             swal(`Añadido al carrito ${itemDetail.title} | Cantidad: ${qty}`,{ 
+                 buttons: false,
+                 timer: 2000,
+                 icon: "success",
+              });
         }
-    
+ 
      return (
          <div className="LibroDetail">
              <div className="LibroDetailContenedor">
                  <div className="LibroHeadDetail">
-                     <img src={product.image} alt={product.title} />
+                     <img src={itemDetail.image} alt={itemDetail.title} />
                  </div>
                  <div className="LibroBodyDetail">
-                     <h2>{product.title}</h2>
-                     <span>Autor: {product.autor}</span>
-                     <p>{product.description}</p>           
+                     <h2>{itemDetail.title}</h2>
+                     <span>Autor: {itemDetail.autor}</span>
+                     <p>{itemDetail.description}</p>           
                      <div className="LibroFooterDetail">
-                         <span className="precio">Precio: USD$ {product.price}</span>
-                         <ItemCount initial={count} stock={product.stock} product={product} onAdd={onAdd} />
+                         <span className="precio">Precio: USD$ {itemDetail.price}</span>
+                         <ItemCount initial={count} stock={itemDetail.stock} itemDetail={itemDetail} addToCart={addToCart} />
                      </div>
                  </div>
              </div>
@@ -48,9 +48,9 @@ import CartContextProvider from '../Context/CartContext';
                  <div className="DetallesExtrasBody">
                      <h4>Caracteristicas del Lenguaje</h4>
                      <ul>
-                         <li>{product.primerCaracteristica}</li>
-                         <li>{product.segundaCaracteristica}</li>
-                         <li>{product.tercerCaracteristica}</li>
+                         <li>{itemDetail.primerCaracteristica}</li>
+                         <li>{itemDetail.segundaCaracteristica}</li>
+                         <li>{itemDetail.tercerCaracteristica}</li>
                      </ul>    
                  </div> 
              </div>  

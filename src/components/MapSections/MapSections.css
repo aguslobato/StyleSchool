@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-.MapSections{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 2.5em 0;
-    padding: 2em;
-    height: 100%;
+ .MapSections{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     margin: 2.5em 0;
+     padding: 2em;
+     height: 100%;
 }
-.ui-search{
-    padding: 3em;
+ .ui-search{
+     padding: 3em;
 }
-.ui-search div{
-    margin: 2em 0;
+ .ui-search div{
+     margin: 2em 0;
 }
-.ui-search div h5{
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;   
+ .ui-search div h5{
+     font-family: 'Raleway', sans-serif;
+     font-size: 20px;   
 }
-.ui-search div ul li{
-    list-style: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+ .ui-search div ul li{
+     list-style: none;
+     font-family: 'Raleway', sans-serif;
+     font-size: 16px;
 }
-.ui-search div ul li a{
-    color: rgb(131, 129, 129);
-    margin: 5px 0;
-    text-decoration: none;
-    transition: .5s;
+ .ui-search div ul li a{
+     color: rgb(131, 129, 129);
+     margin: 5px 0;
+     text-decoration: none;
+     transition: .5s;
 }
-.ui-search div ul li a:hover{
-    color: #740731;
-    transition: .5s;
+ .ui-search div ul li a:hover{
+     color: #740731;
+     transition: .5s;
 }
-.ui-search div ul li a code{
-    color: #00a650;
-    font-family: 'Abril Fatface', cursive;
+ .ui-search div ul li a code{
+     color: #00a650;
+     font-family: 'Abril Fatface', cursive;
 }
-.ui-search div ul li a code i{
-    color: #00a650;
-    margin-right: 4px;
+ .ui-search div ul li a code i{
+     color: #00a650;
+     margin-right: 4px;
 }

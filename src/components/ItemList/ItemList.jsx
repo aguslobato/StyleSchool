@@ -20,8 +20,6 @@
                  </div>
              </div> 
              <Contact/>
-         </section>
-
-         
+         </section>        
      );
  };

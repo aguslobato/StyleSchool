@@ -1,0 +1,10 @@
+ .nav-link i span{
+     margin: 2px;
+     font-size: 20px;
+     color: rgb(133, 133, 133);
+     transition: .8s;
+}
+ .nav-link i:hover span{
+     transition: .8s;
+     color: rgb(49, 49, 49);
+}

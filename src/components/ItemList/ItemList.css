@@ -20,25 +20,20 @@
      padding: 4em;
  }
 
-
-
-
-
-
  @media (min-width: 2500px){}
 
  @media (max-width: 500px){
-    .ContainerLibros{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 2em 0;
+     .ContainerLibros{
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         padding: 2em 0;
     }
-    .ContainerLibrosContenedor{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding: 1em;
+     .ContainerLibrosContenedor{
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         flex-direction: column;
+         padding: 1em;
     }
  }

@@ -1,28 +1,24 @@
-import React, { useEffect, useState } from "react";
-import GetFetchDetail  from "../Services/GetFechDetail.jsx";
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { useParams } from "react-router";
+ import React, { useEffect, useState } from "react";
+ import GetFechDetail  from "../Services/GetFechDetail.jsx";
+ import ItemDetail from '../ItemDetail/ItemDetail'
+ import { useParams } from "react-router";
 
+ const ItemDetailContainer = () => {
 
-const ItemDetailContainer = () => {
+   const [itemDetail, setProduct] = useState([])
+   const {productId} = useParams()
 
-  const [product, setProduct] = useState([])
-
-  const {productId} = useParams()
-
-  useEffect(() => {
-      GetFetchDetail
-      .then(response => {        
-        setProduct(response.find((prod) => prod.id === parseInt(productId)));
-      })
+   useEffect(() => {
+     GetFechDetail
+     .then(response => {        
+       setProduct(response.find((prod) => prod.id === parseInt(productId)));
+    })
   },[productId])   
 
-  
-  return (
+   return (
      <div className="DetallesLibro">
-         <ItemDetail product={product}/>
-       </div>
+       <ItemDetail itemDetail={itemDetail}/>
+     </div>
   )
 }
-
-export default ItemDetailContainer
+ export default ItemDetailContainer
