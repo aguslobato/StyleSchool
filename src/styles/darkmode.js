@@ -1,4 +1,5 @@
-// const darkMode = document.querySelector("#dark-mode")
-// darkMode.addEventListener('click', ()=> {
-//   document.body.classList.toggle('dark-mode')
-// })
+//  const darkMode = document.querySelector("#dark-mode")
+//  darkMode.addEventListener('click', ()=> {
+//    document.body.classList.toggle('dark-mode')
+//  })
+//  export default darkMode

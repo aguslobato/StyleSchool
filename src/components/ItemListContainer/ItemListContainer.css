@@ -1,0 +1,12 @@
+.LoadingTitulo{
+    background-image: url(../images/imagesHome/fondo-libro-home.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(132, 6, 6);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}

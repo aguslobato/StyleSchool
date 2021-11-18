@@ -3,7 +3,6 @@
  import '../ItemDetail/ItemDetail'
  import { Link } from "react-router-dom";
 
-
  const ItemCount = ({initial, stock, addToCart}) => {
    //Variables de estado
    const [count, setCount] = useState(initial);

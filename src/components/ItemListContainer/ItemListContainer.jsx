@@ -1,33 +1,47 @@
  import React, { useEffect, useState } from "react";
- import  GetFechList  from "../Services/GetFechList.jsx";
  import { ItemList } from '../ItemList/ItemList'
  import { useParams } from "react-router";
+ import { GetFechFirebase } from "../Services/GetFechFirebase.jsx";
+ import './ItemListContainer.css'
 
  const ItemListContainer = () => {
 
      const [product, setProduct] = useState([])
      const {categoryId} = useParams()
+     const [loading, setLoading] = useState(true);
 
      useEffect(() => {
+
+         const dataBase = GetFechFirebase() 
+        
          if (categoryId) {
-             GetFechList
-             .then(response => {        
-                 setProduct(response.filter(prod => prod.category === categoryId))
-            })
+ 
+             const dataBaseQuery = dataBase.collection("items").where("category", "==", categoryId).get()
+ 
+             dataBaseQuery
+             .then(response => setProduct(response.docs.map(item => ({id:item.id, ...item.data()}))))
+             .catch (error => alert("Error:", error))
+             .finally(()=> setLoading(false))
         }
-      
+
          else {
-             GetFechList
-             .then(response => {        
-                 setProduct(response)
-            })
-        }
+
+             const dataBaseQuery = dataBase.collection("items").orderBy("category").get()
+
+             dataBaseQuery
+             .then(response => setProduct(response.docs.map(item => ({id:item.id, ...item.data()}))))
+             .catch (error => alert("Error:", error))
+             .finally(()=> setLoading(false))
+        } 
     },[categoryId])
 
      return (
-         <> 
-             <ItemList product={product} />
-         </>/*Ahorra divs.... lo explica el profe en el after/ no olvidar!*/
+         <div> 
+             {loading
+                 ? <h2 className="LoadingTitulo">Los productos se estan cargando...</h2>
+                 :  <ItemList product={product} />
+             }
+         </div>
     );
 }
  export default ItemListContainer

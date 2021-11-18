@@ -5,7 +5,6 @@
  import Contact from "../Home/Contact";
  import NavBarProductos from "../Home/NavBarProductos";
 
-
  export const ItemList = ({ product }) => {
      return (
          <section className="Principal">

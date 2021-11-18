@@ -8,7 +8,7 @@
 
  function FuncionalidadAcademia(){
      return (
-         <div className="FuncionalidadAcademia">
+         <div className="FuncionalidadAcademia" data-aos="fade-right">
 
              <div className="BecaEstudio">
                  <div className="BecaEstudioContenedor">
@@ -78,7 +78,7 @@
              </div>
 
 
-             <div className="Propaganda">
+             <div className="Propaganda" data-aos="fade-left">
                  <div className="PropagandaContenedor">
                      <div className="PropagandaLibro">
                          <Link to="/"><img src={libroJuego} alt="Libro de Propaganda" /></Link>

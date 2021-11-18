@@ -9,10 +9,10 @@ function NavBarProductos (){
                      <Link className="nav-link active" aria-current="page" to="/">Products</Link>
                  </li>
                  <li className="nav-item">
-                     <Link className="nav-link" to="/">Contact</Link>
+                     <Link className="nav-link" to="/contact">Contact</Link>
                  </li>
                  <li className="nav-item">
-                     <Link className="nav-link" to="/">About Us</Link>
+                     <Link className="nav-link" to="/contact">About Us</Link>
                  </li>
                  <li className="nav-item">
                      <Link className="nav-link" to="/">Home</Link>

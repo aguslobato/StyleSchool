@@ -1,23 +1,30 @@
  import React, { useEffect, useState } from "react";
- import GetFechDetail  from "../Services/GetFechDetail.jsx";
  import ItemDetail from '../ItemDetail/ItemDetail'
  import { useParams } from "react-router";
-
+ import { GetFechFirebase } from "../Services/GetFechFirebase.jsx";
  const ItemDetailContainer = () => {
 
    const [itemDetail, setProduct] = useState([])
    const {productId} = useParams()
+   const [loading, setLoading] = useState(true);
 
    useEffect(() => {
-     GetFechDetail
-     .then(response => {        
-       setProduct(response.find((prod) => prod.id === parseInt(productId)));
-    })
+     const dataBase = GetFechFirebase()
+
+     const dataBaseQuery = dataBase.collection("items").doc(productId).get()
+
+     dataBaseQuery
+     .then(item => setProduct({id:item.id, ...item.data()}))
+     .catch (error => alert("Error:", error))
+     .finally(()=> setLoading(false))
   },[productId])   
 
    return (
      <div className="DetallesLibro">
-       <ItemDetail itemDetail={itemDetail}/>
+       {loading
+        ? <h2 className="LoadingTitulo">El detalle del producto se esta cargando</h2>
+        : <ItemDetail itemDetail={itemDetail}/>
+       }
      </div>
   )
 }

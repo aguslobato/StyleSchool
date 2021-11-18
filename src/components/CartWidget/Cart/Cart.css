@@ -65,7 +65,7 @@
      transition: .8s;
      color: #fff;
      padding: 10px 20px;
-     border-radius: 0;
+     border-radius: 20px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -74,7 +74,7 @@
  .RemoveCart:hover{
      transition: .8s;
      background-color: rgba(0, 0, 0, 0.672);
-     border-radius: 20px;
+     border-radius: 0;
 }
  .CarritoVacio{
      color: #fff;
@@ -84,17 +84,28 @@
      font-size: 25px;
 }
  .VolverHome{
+     margin: 0 1em;
      text-decoration: none;
      font-size: 30px;
      color: rgb(255, 255, 255);
      text-align: center;
      align-items: center;
-}
- .VolverHome span {
-     color: red;
+     display: flex;
+     justify-content: center;
+     transition: .8s;
 }
  .VolverHome:hover{
-     color: #fff;
+     color: rgb(186, 186, 186);
+     transition: .8s;
+}
+ .GraciasCompra{
+     font-size: 21px;
+     color: rgb(255, 255, 255);
+     text-align: center;
+}
+ .OrderId{
+     font-size: 22px;
+     color: rgb(169, 169, 169);
 }
  .ContenidoCarritoVacio{
      margin: 1em;
@@ -109,4 +120,37 @@
 }
  .TituloPrincipal span{
      color: rgb(121, 25, 25);
+}
+ .TotalCompra{
+     margin: 1em 0;
+}
+ .PrecioTotal{
+     color: rgb(2, 157, 41);
+}
+ .FormLabel{
+     display: flex;
+     justify-content: space-around;
+     padding: 10px 20px;
+     margin: 1em 0;
+}
+ .Comprar{
+     margin: 0 1em;
+     padding: 10px 20px;
+     font-size: 20px;
+     background-color: rgba(0, 0, 0, 0);
+     border: 1px solid white;
+     color: rgb(255, 255, 255);
+     transition: .8s;
+}
+ .Comprar:hover{
+     background-color: rgba(0, 0, 0, 0.522);
+     color: #fff;
+     transition: .8s;
+}
+ form{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     align-content:center;
 }

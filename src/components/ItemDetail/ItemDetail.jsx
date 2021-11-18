@@ -1,10 +1,9 @@
  import ItemCount from '../ItemCount/ItemCount'
  import '../ItemDetail/ItemDetail.css'
- import logo from '../images/imagesHome/logo.jpg'
- import { Link } from 'react-router-dom';
  import { useState } from "react";
  import swal from "sweetalert";
  import { useCartContext } from '../Context/CartContext';
+ import Zoom from 'react-reveal/Zoom';
 
      const ItemDetail = ({itemDetail}) => {
          const [count] = useState(1);     
@@ -23,6 +22,7 @@
  
      return (
          <div className="LibroDetail">
+             <Zoom>
              <div className="LibroDetailContenedor">
                  <div className="LibroHeadDetail">
                      <img src={itemDetail.image} alt={itemDetail.title} />
@@ -37,23 +37,7 @@
                      </div>
                  </div>
              </div>
-             <div className="DetallesExtrasContenedor">
-                 <div className="DetallesExtrasHead">
-                     <h2>Medios de Pago</h2>
-                     <span><i className="far fa-money-bill-alt"></i></span>
-                     <span><i className="fas fa-money-check"></i></span>
-                     <span><i className="fab fa-cc-paypal"></i></span>
-                     <Link to="/"><img src={logo} alt="Logo StyleSchool" /></Link>
-                 </div>  
-                 <div className="DetallesExtrasBody">
-                     <h4>Caracteristicas del Lenguaje</h4>
-                     <ul>
-                         <li>{itemDetail.primerCaracteristica}</li>
-                         <li>{itemDetail.segundaCaracteristica}</li>
-                         <li>{itemDetail.tercerCaracteristica}</li>
-                     </ul>    
-                 </div> 
-             </div>  
+             </Zoom>
          </div>
     );
 };   
