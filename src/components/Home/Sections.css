@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 
-
-
-
-
 .Contact{
    background-image: url(../images/imagesHome/fondo-formulario.jpg);
    background-position: center;
@@ -128,13 +124,6 @@
     font-size: 18px;
     color: #96053d;
 }
-
-
-
-
-
-
-
 
 
 @media (min-width: 2500px){

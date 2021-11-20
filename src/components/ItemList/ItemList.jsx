@@ -20,5 +20,5 @@
              </div> 
              <Contact/>
          </section>        
-     );
+    );
  };

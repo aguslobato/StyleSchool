@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import './MapSections.css'
+import Fade from 'react-reveal/Fade';
 
  function MapSections() {
      return (
          <div className="MapSections">
-             <section className="ui-search">
+             <section className="ui-search"><Fade left>
                  <div className="Categorias">
                      <ul>
                          <h5>Categorias</h5>
@@ -48,7 +49,7 @@ import './MapSections.css'
                          <li><Link to="/ubicacion/SantaFe">Santa Fe</Link></li>
                      </ul>
                  </div>
-             </section>         
+             </Fade></section>         
          </div>
      );
  }

@@ -55,8 +55,7 @@
              ...userForm, 
              [e.target.name]: e.target.value
         })
-    }
-
+    } 
      return (
          <div className="CartContenedor">
              <div className="CartContenedorContainer">
@@ -114,7 +113,7 @@
                              </tbody>
                          </table>
                          <form onSubmit={createOrder} onChange={handleChange}>
-                             <h2 className="VolverHome">Ingresá tus datos</h2>
+                             <h2 className="CarritoVacio">Ingresá tus datos</h2>
                              <div>
                                  <label htmlFor="name" className="FormLabel">Nombre</label>
                                  <input className="FormLabel" type="text" name="name" placeholder="Federico" defaultValue={userForm.name}/>

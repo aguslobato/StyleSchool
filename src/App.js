@@ -1,4 +1,3 @@
-
  import './styles/Estructura.css'
  import './styles/Medidas.css'
 

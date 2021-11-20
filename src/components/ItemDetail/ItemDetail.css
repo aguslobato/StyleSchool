@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
  body{
    background-color: rgb(224, 223, 223);
@@ -7,33 +8,125 @@
  .LibroDetail{
    display: flex;
    justify-content: center;
+   align-items: center;
    flex-wrap: wrap;
-   margin-bottom: 1em;
+   background-color: rgb(204, 204, 204);
 }
  .LibroDetailContenedor{
-   width: 1200px;
-   height: 100vh;
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 2em 0;
+   width: 100%;
+   min-height: 100vh;
    display: flex;
-   justify-content: center;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
    align-items: center;
 }
+ .ContenedorPrincipalLibro{
+   background-color: #fff;
+   width: 80%;
+}
+ .LibroDetailsContenedorExtra{
+   width: 70%;
+   padding: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Nunito Sans', sans-serif;
+ }
+ .LibroDetailsContenedorExtra table{
+   width: 800px;
+   padding: 2em;
+   font: 200;
+   font-family: 'Nunito Sans', sans-serif;
+ }
+ .LibroDetailsContenedorExtra tr{
+   border-radius: 10px;
+ }
+ .LibroDetailsContenedorExtra td{
+   padding: 20px;
+ }
+ .LibroDetailsContenedorExtra th{
+   padding: 20px;
+   background-color: #d3d3d3;
+ }
+ .LibroDetailsContenedorExtra h2{
+   font-size: 25px;
+   font: 100;
+   
+   padding: 10px;
+ }
+ .ContenedorDetalles-MediosPago{
+   padding: 2em;
+   margin: 3em 0;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: flex-end;
+   width: 40%;
+}
+ .MediosPagoLibro{
+   width: 70%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   padding: 2em 1em;
+   border: 1px solid #b1b1b1;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   font-family: 'Raleway', sans-serif;
+   color: rgb(0, 0, 0);
+ }
+ .MediosPagoLibro h2{
+   font-size: 20px;
+   font-weight: 200;
+ }
+ .MediosPagoLibro .TarjetasCredito span{
+   color: grey;
+ }
+ .MediosPagoLibro h3{
+   font: 100;
+   font-size: 18px;
+ }
+ .TarjetasCredito{
+   display: flex;
+   flex-direction: column;
+ }
+ .MediosPagoLibro img{
+   margin: 20px;
+ }
+ .TarjetasDebito{
+  display: flex;
+  flex-direction: column;
+}
  .LibroDetailContenedor .LibroHeadDetail{
-   margin-right: 2em;
+   margin: 2em;
 }
  .LibroDetailContenedor .LibroHeadDetail img{
-   width: 450px;
-   height: 450px;
-   border-radius: 20%;
+   width: 400px;
+   height: 500px;
+   transition: .9s;
 }
  .LibroDetailContenedor .LibroBodyDetail{
+   width: 70%;
+   flex-wrap: wrap;
+   text-align: center;
    padding: 2em;
-   border-left: 2px solid #b1b1b1;
+   margin: 1em 0;
+   border: 1px solid #b1b1b1;
+   border-radius: 10px;
    font-family: 'Raleway', sans-serif;
    color: rgb(0, 0, 0);
 }
  .LibroDetailContenedor .LibroBodyDetail h2{
-   color: #003b5a;
+   color: #000000;
    font-family: 'Playfair Display', serif;
+   display: flex;
+   justify-content: space-around;
+   font-size: 20px;
+   font: 200;
+   border-bottom: 2px solid #b6b6b6;
 }
  .LibroDetailContenedor .LibroBodyDetail h3, h4{
    font-size: 17px;
@@ -43,99 +136,69 @@
    color: rgb(72, 70, 70);
 }
  .LibroDetailContenedor .LibroBodyDetail button{
-   padding: 10px;
+   padding: 15px;
    margin: 10px;
-   background-color: rgb(224, 223, 223);
-   color: rgb(0, 0, 0);
-   border: 2px solid rgb(101, 101, 101);
-   border-radius: 20px;
-   transition: .9s;
-}
- .LibroDetailContenedor .LibroBodyDetail button:hover{
-   background-color: rgba(82, 82, 82, 0.53);
-   border: 2px solid rgb(255, 255, 255);
-   color: #fff;
+   background-color: rgb(67, 96, 190);
+   color: rgb(255, 255, 255);
+   border: none;
+   border-radius: 10px;
    transition: .9s;
 }
  .LibroDetailContenedor .LibroBodyDetail .precio{
-   border-bottom: 2px solid #b1b1b1;
-   color: #000000;
+   color: #0f8c19;
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 20px;
-   margin-right: 10px;
-}
-
- /*DETALLES EXTRAS*/
- .DetallesExtrasContenedor{
+   margin: 1em;
+   padding: 1em;
+  }
+ .Mg{
+   font-size: 40px;
+   color: rgb(67, 96, 190);
+   cursor: pointer;
+   transition: .6s;
+  }
+ .Mg:hover{
+   transition: .6s;
+   color: rgb(67, 96, 190);
+ }
+ .ContenedorGarantia{
+   padding: 2em;
+   border: 1px solid #b1b1b1;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+  }
+ .Garantia{
+   font-size: 20px;
+   font-weight: 200;
+ }
+ .ContenedorGarantia span{
+   color: grey;
+ }
+ code{
+   color: green;
+   font: 900;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+ .EnvioRetiro{
    display: flex;
-   justify-content: center;
-   align-content: space-around;
-   height: 500px;
-   width: 60%;
-}
- .DetallesExtrasContenedor .DetallesExtrasHead{
-   width: 50%;
-}
- .DetallesExtrasContenedor .DetallesExtrasHead h2{
-   color: #003b5a;
-   font-family: 'Playfair Display', serif;
-   font-size: 45px;
-}
- .DetallesExtrasContenedor .DetallesExtrasHead img{
-   width: 6em;
-   height: 6em;
-   transition: .9s;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   position: relative;
-   left: 20%;
-   top: 20%;
-   box-shadow: 0px 7px 10px #063752;
-}
- .DetallesExtrasContenedor .DetallesExtrasHead img:hover{
-   box-shadow: 0px 15px 14px #0d3e59;
-   transition: .9s;
-   transform: scale(1.1, 1.1);
-}
- .DetallesExtrasContenedor .DetallesExtrasHead span i{
-   font-size: 50px;
-   color: #003b5a;
-   margin: 20px;
-   transition: .9s;
-}
- .DetallesExtrasContenedor .DetallesExtrasHead span i:hover{
-   color: #0c3144;
-   transition: .9s;
-   transform: scale(1.1, 1.1);
-}
- .DetallesExtrasContenedor .DetallesExtrasBody{
-   width: 50%;
-   border-left: 2px solid #b1b1b1;
-   padding-left: 1em;
-}
- .DetallesExtrasContenedor .DetallesExtrasBody h4{
-   color: #003b5a;
-   font-family: 'Playfair Display', serif;
-   font-size: 35px;
+   flex-direction: column;
+   padding: 10px 0;
+ }
+ .envios img{
+   width: 50px;
+   height: 50px;
+ }
+ .retirar img{
+   width: 30px;
+   height: 30px;
+ }
+ .Puntaje{
+   font-size: 17px;
+   font: 100;
+   padding: 10px;
+   margin: 10px 0;
    text-align: center;
-}
- .DetallesExtrasContenedor .DetallesExtrasBody ul li{
-   list-style: none;
-   font-size: 16px;
-   font-family: 'Playfair Display', serif;
-   margin: 20px;
-   border-bottom: 2px solid #b1b1b1;
-   transition: .9s;
-}
- .DetallesExtrasContenedor .DetallesExtrasBody ul li:hover{
-   color: #05283a;
-   transition: .9s;
-   cursor: default;
-}
-
+  }
  @media (max-width: 500px){
    .LibroDetail{
      flex-direction: row;

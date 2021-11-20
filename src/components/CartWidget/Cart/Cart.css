@@ -51,43 +51,52 @@
  .RemoveItem{
      font-size: 20px;
      transition: .8s;
+     padding: 10px;
      color: rgb(255, 255, 255);
-     background-color: rgba(255, 255, 255, 0);
-     border: none;
+     background-color: rgb(213, 4, 4);
+     border: #fff 1px solid;
+     border-radius: 15px;
 }
  .RemoveItem:hover{
      transition: .8s;
-     color: rgb(165, 162, 162);
+     color: rgb(255, 255, 255);
+     background-color: red;
 }
  .RemoveCart{
-     background-color: rgba(0, 0, 0, 0.391);
-     border: 1px solid white;
-     transition: .8s;
-     color: #fff;
-     padding: 10px 20px;
-     border-radius: 20px;
      display: flex;
-     justify-content: center;
      align-items: center;
-     text-align: center;
+     justify-content: center;
+     border: rgb(42, 101, 209) 2px solid;
+     border-radius: 10px;
+     background-color: rgb(42, 101, 209);
+     padding: 10px 20px;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     transition: .7s;
 }
  .RemoveCart:hover{
-     transition: .8s;
-     background-color: rgba(0, 0, 0, 0.672);
-     border-radius: 0;
+     color: rgb(255, 255, 255);
+     background-color: rgb(34, 87, 186);
+     transition: .7s;
 }
  .CarritoVacio{
      color: #fff;
      font-size: 30px;
+     padding: 10px 20px;
 }
  .TotalItemCarrito{
      font-size: 25px;
 }
  .VolverHome{
      margin: 0 1em;
+     padding: 10px 20px;
      text-decoration: none;
      font-size: 30px;
-     color: rgb(255, 255, 255);
+     font-weight: 600;
+     color: rgb(0, 0, 0);
+     background-color: #fff;
+     border-radius: 10px;
+     border: none;
      text-align: center;
      align-items: center;
      display: flex;
@@ -95,7 +104,7 @@
      transition: .8s;
 }
  .VolverHome:hover{
-     color: rgb(186, 186, 186);
+     color: rgb(82, 82, 82);
      transition: .8s;
 }
  .GraciasCompra{
@@ -137,15 +146,16 @@
      margin: 0 1em;
      padding: 10px 20px;
      font-size: 20px;
-     background-color: rgba(0, 0, 0, 0);
-     border: 1px solid white;
+     background-color: green;
+     border: green 2px solid;
+     border-radius: 10px;
      color: rgb(255, 255, 255);
      transition: .8s;
 }
  .Comprar:hover{
-     background-color: rgba(0, 0, 0, 0.522);
-     color: #fff;
-     transition: .8s;
+     background-color: rgb(3, 114, 3);
+     color: rgb(255, 255, 255);
+     transition: .7s;
 }
  form{
      display: flex;

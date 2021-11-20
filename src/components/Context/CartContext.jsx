@@ -1,4 +1,5 @@
  import {createContext, useContext, useState} from "react";
+ import swal from "sweetalert";
 
  const CartContext = createContext();
 
@@ -28,6 +29,10 @@
          setItemQuantity(itemQuantity - itemToRemove.quantity)
          setCartTotal(cartTotal - (itemToRemove.itemDetail.price * itemToRemove.quantity))
          setCartList(cartList.filter(itemSearched => itemSearched.itemDetail.id !== idItemToRemove))
+         swal({
+             icon: "success",
+             text: "¡Se acaba de eliminar el producto del carrito!",
+        }); 
     }
 
      const removeCart = () => {

@@ -25,7 +25,7 @@
          <button disabled={count === initial} onClick={()=>setCount(count - 1)}>-</button>
          <span>{count}</span>
          <button disabled={count === stock} onClick={()=>setCount(count + 1)}>+</button>
-         <span className="stock-disponible">Disponibles: {stock}</span>
+         <span className="stock-disponible">({stock} disponibles)</span>
          <button onClick={addToCartHandler}>Agregar al carrito</button>      
        </div>
   )
